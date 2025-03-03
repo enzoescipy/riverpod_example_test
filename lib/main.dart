@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:image_search/app/screen/testpage/testpage_page.dart';
+import 'package:image_search/app/router/router.dart';
 
 void main() {
-  runApp(ProviderScope(child: TestPage()));
+  runApp(ProviderScope(child: MaterialApp.router(routerConfig: router,)));
 }
